@@ -3,7 +3,7 @@ import telebot
 import sqlite3
 from telebot import types
 
-API_TOKEN = "8288769527:AAEFN-s-XiwcY-dBEmPr-PamJ0aDKeAfGS8"  # вставь сюда свой токен
+API_TOKEN = "YOUR_BOT_TOKEN_HERE"  # вставь сюда свой токен
 bot = telebot.TeleBot(API_TOKEN)
 
 DB_PATH = "slang.db"
@@ -11,7 +11,7 @@ ALLOWED_CATEGORIES = ["айти", "геймерский", "молодёжный"
 
 # --- Настройки доступа ---
 ADMIN_ONLY = True
-ADMINS = [123456789, 369265186]  # сюда вставь свой Telegram user_id
+ADMINS = [123456789, YOUR_USER_ID_HERE]  # сюда вставь свой Telegram user_id
 
 # --- Инициализация базы ---
 def init_db():
